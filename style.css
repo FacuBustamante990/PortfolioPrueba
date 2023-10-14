@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & family= Poppins:wght@400;500;600;700;800 & display=swap');
+/*
+familia tipográfica: 'Bebas Neue', sans-serif;
+familia tipográfica: 'Poppins', sans-serif;
+*/
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     list-style: none;
+     text-decoration: none;
+}
+body{
+    font-family:'Poppins', sans-serif ;
+    background-color: #101630;
+}
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.menú{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: #49BADA;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+    
+}
+
+.navbar ul li{
+    position: relative;
+    float: right;
+}
+
+/*
+li {
+    display: inline-block;
+    margin-right: 10px;
+}
+ul {
+    width: 100%;
+    text-align: center;
+    
+}
+*/
+
+.navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+    font-weight: 600;
+}
+.navbar ul li a:hover{
+    color: #49BADA;
+
+}
+#menú{
+    display: none;
+
+}
+.menú-icono{
+    
+    width: 25px;
+}
+.menú label{
+    cursor: pointer;
+    display: none;
+}
+
+.header{
+    text-align:right;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding: 50px 0 0 0;
+}
+.header-content .container {
+    display: flex;
+    flex: 1;
+
+}
+.header-txt{
+    flex-basis: 50%;
+    font-size: 35px;
+
+}
+.header-txt span{
+    font-size: 37px;
+    font-weight: 600;
+    color: #868B9E;
+}
+.header-txt h1{
+    font-size: 50px;
+    color: white;
+    line-height: 1;
+    font-family: Bebas Neue, sans-serif;
+    margin: 10px 0 25px 0;
+}
+.btn-1{
+    display: inline-block;
+    padding: 13px 35px;
+    background: linear-gradient(
+        90deg,
+        rgba(78, 159, 215, 1) 0%,
+        rgba(74, 42, 193 ,1) 100%
+    );
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.about{
+    padding: 0 0 100px 0;
+    display: flex;
+    align-items: center;
+
+}
+.about-img{
+    flex-basis: 40%;
+}
+.about-img img{
+    width: 350px;
+    border-radius: 15px;
+    border: 10px solid  #49BADA;
+}
+.about-txt{
+    flex-basis: 60%;
+
+}
+h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.about-txt p{
+    color: #b3b3b3;
+    font-size: 17px;
+    margin-bottom: 50px;
+
+}
+
+.buttoms a{
+    margin-right: 15px;
+    
+}
+
+.Portfolio{
+    padding: 50px 0;
+    text-align: center;
+
+}
+.Portfolio-content{
+    margin-top: 70px;
+}
+.Portfolio-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.Portfolio-txt{
+    flex-basis: 50%;
+    text-align: left;
+
+}
+
+.Portfolio-txt span{
+    font-size: 30px;
+    font-weight: 600;
+    display: block;
+    color: #49bada;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+.Portfolio-txt h3{
+    color: white ;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    margin-left: 10px;
+}
+.Portfolio-txt p{
+    font-size: 17px;
+    color: #c5c5c5;
+    margin-bottom: 25px;
+    margin-left: 10px;
+}
+.Portfolio-img{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.Portfolio-img img{
+    width: 400px;
+    margin-left: 50px;
+
+}
+.skills{
+    padding: 50px 0 100px 0;
+    text-align: center;
+}
+.skills-content{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 100px;
+    justify-content: center;
+}
+.skills-content img {
+    width: 70px;
+
+
+}
+.footer .container{
+    padding: 50px 0;
+    background: linear-gradient(
+        90deg,
+        rgba(74,42,193,1) 0%
+        rgba(78,159,215,1) 100%
+    );
+}
+
+.footer content {
+    display: flex;
+    justify-content: space-between;
+    
+}
+/*Averiguar como acomodar el footer*/
+
+.link h3{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+
+}
+.link a{
+    color:#c5c5c5;
+    font-size: 17px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+/*
+PARTE RESPONSIVE
+*/
+
+@media (max-width:991px){
+   .menú{
+    padding: 20px;
+   } 
+   .menú label {
+    display: initial;
+   }
+   .menú .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color:#49bada ;
+    display: none;
+   }
+   .menú .navbar ul li a:hover {
+    color: #101630;
+   }
+   .menú .navbar ul li{
+    width: 100%;
+   }
+
+   #menú:checked ~ .navbar{
+    display: initial;
+   }
+
+   .header{
+    min-height: 0vh;
+    padding: 100px 30px 30px 30px;
+   }
+   .header-content{
+    flex-direction: column;
+    text-align: center;
+   }
+   .header-txt h1{
+    font-size: 70px;
+   }
+  
+   .about{
+    padding: 30px;
+    flex-direction: column;
+    text-align: center;
+   }
+   .about-img{
+    text-align: center;
+   }
+   .about-img img{
+    width: 250px;
+    margin-bottom: 15px;
+   }
+   .button a{
+    margin: 0 0 10px 0;
+
+   }
+   .Portfolio{
+    padding: 30px;
+
+   }
+   .Portfolio-content{
+    margin-top: 30px;
+   }
+   .Portfolio-1{
+    flex-direction: column;
+    margin: bottom 30px; 
+    
+   }
+   .Portfolio-txt{
+    text-align: center;
+    margin-bottom: 30px;
+   }
+   .Portfolio-img{
+    order: 2;
+
+   }
+   .Portfolio-img img{
+    width: 250px;
+   }
+   .skills{
+    padding: 0 30px 30px 30px;
+   }
+   .skills-content{
+    margin-top: 0;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 40px;
+    padding: 0 100px;
+
+   }
+   .footer{
+    padding: 30px;
+
+   }
+   .footer-content{
+    flex-direction: column;
+    text-align: center;
+   }
+
+}
