@@ -1,0 +1,87 @@
+body{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: lightseagreen;
+    color: white;
+}
+.conteiner{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    box-shadow: 5px;
+    text-transform: uppercase;
+}
+
+.search input{
+    font-size: 25px;
+    display: flex;
+    text-align: center;
+    width: 400px;
+    padding: 15px 10px;
+    border-radius: 7px;
+    border: none;
+}
+
+form{
+    display: flex;
+}
+
+.search button{
+    width: 70px;
+    margin-left: 10px;
+    font-size: 30px;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    background-color: rgba(63, 132, 136, 0.801);
+}
+
+.search button:hover{
+    cursor: pointer;
+}
+
+.li-container{
+    font-weight: 500;
+    background-color: white;
+    color: rgb(44, 78, 78);
+    width: 100%;
+    margin-top: 35px;
+    border-radius: 10px;
+
+    
+}
+
+.li-container ul{
+    position: relative;
+    bottom: -30px;
+}
+
+.btn-delete{
+    border: none;
+    background-color:  #e31746;
+    color: white;
+    margin-left: auto;
+    width: 10%;
+    font-size: 25px;
+    padding: 13px 10px;
+    border-radius: 5px;
+    display: flex;
+    text-align: flex-end ;
+    justify-content: center ;
+    position: relative;
+    top: -50px;
+    margin-right: 10px;
+}
+
+.btn-delete:hover{
+    cursor: pointer;
+    background-color: rgb(233, 84, 84);
+}
+
+
+.empty p{
+    font-weight: 600;
+    color: rgb(38, 65, 65);
+    text-transform: uppercase;
+    font-weight: bold;
+}
